@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Amatic SC", sans-serif
+            }
+
+            .menu {
+                display: none
+            }
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("farm3.png");
+            
+                min-height: 100%;
+                
+
+        
+               
+            }
+
+            .container img {
+                 max-width: 100px;
+                 max-height:150px;
+                 width: auto;
+                height: auto;
+                position: absolute;
+                float: right;
+                top: 0ppx;
+                right: 0px;
+}
+.container {
+    position: relative;
+    clear: both;
+    margin-top: 20px;
+}
+img {
+    vertical-align: top
+}
+
+
+
+             #content {
+        position: relative;
+    }
+    #content img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+
+
+
+
+
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+            
+        <div class="container"><img src="logo1.png"></div>
+        </div>
+
+        
+         
+    </div>
+
+
+    
+
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">*Explorações abertas entre as 16:00 e as 17:00 </span>
+        </div>
+
+     
+
+
+       
+
+
+        <div class="w3-display-middle w3-center">
+                <br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br>
+
+                
+                <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Junte-se ao movimento e Apoie os produtores locais </a></p>
+
+           <span class="w3-text-white w3-hide-small" style="font-family: 'Oswald', sans-serif; font-size:100px">ALEGRA CAMPOS</span> 
+           <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>Alegra
+                    campos</b></span> 
+
+                <!-- <img src="logo1.png"> -->
+
+            
+        </div>
+
+        
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            
+            
+            <h2 class="w3-center w3-jumbo" style="margin-bottom:64px">Menu alegra campos</h2>
+            
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Destaques</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Frutas e Legumes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Outros produtos</div>
+                </a>
+            </div>
+
+            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Batatas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€0,60</span></h1>
+                <p class="w3-text-grey">Batatas novas da exploração do Senhor António, em Santana</p>
+                <hr>
+
+                <h1><b>Bananas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€1,00</span></h1>
+                <p class="w3-text-grey">Encontre-as facilmente na exploração da Senhora Maria, na Madalena do Mar</p>
+                <hr>
+
+                <h1><b>Ovos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€0,90</span></h1>
+                <p class="w3-text-grey">Frescos, e directamente das galinhas da Dona Ana, em São Jorge (vendido à dúzia)</p>
+                <hr>
+
+                <h1><b>Pão</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€1,50</span></h1>
+                <p class="w3-text-grey">Por encomenda (até às 15h, todos os dias), na padaria do Arco de São Jorge</p>
+                <hr>
+
+                <h1><b>Ervas Aromáticas</b> <span class="w3-tag w3-red w3-round">Promoção!</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">€6.00</span></h1>
+                <p class="w3-text-grey">Diversos tipos de ervas aromáticas por um preço único, no Arco de São Jorge</p>
+                <hr>
+
+                <h1><b>Figos</b> <span class="w3-tag w3-grey w3-round">Novo</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">€5.50</span></h1>
+                <p class="w3-text-grey">Figos da época. Venha colher directamente da figueira, no Arco de São Jorge (preço inclui experiência de 15 minutos + caixa de 2kg)</p>
+            </div>
+
+            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                <hr>
+
+                <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+                <p class="w3-text-grey">Ravioli filled with cheese</p>
+                <hr>
+
+                <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+                <hr>
+
+                <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+                <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+            </div>
+
+
+            <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                <p class="w3-text-grey">Ask the waiter</p>
+                <hr>
+
+                <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                <hr>
+
+                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                <hr>
+
+                <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                <p class="w3-text-grey">Tomatoes and mozzarella</p>
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Acerca</h1>
+            <p>O Movimento 'Alegra Campos' pretende apoiar os pequenos agricultores e produtores da Madeira, ajudando-os a escoar os seus produtos de uma forma prática, divertida, e sem intermediários. Visite explorações espalhadas um pouco por toda a ilha, conheça a realidade rural, e aproveite para adquirir produtos frescos e directamente da origem.
+                
+            </p>
+            <p><strong>É agricultor ou produtor e pretende juntar-se s este movimento?</strong> Registe-se abaixo. Teremos todo o gosto em conhecer a sua exploração e adicioná-la à nossa lista. Lembre-se que a mesma deve estar aberta durante as 16 e as 17h (pelo menos durante 1 hora por semana), e ter condições de higiene e acessibilidade que garantam a segurança dos seus visitantes.
+                   
+            <p>Se é apenas um consumidor, e adepto do comércio justo, consulte a nossa lista ou o nosso mapa, e aproveite desde já para descobrir explorações à sua volta.</p>
+            <img src="farm7.png" style="width:100%" class="w3-margin-top w3-margin-bottom"
+                alt="Restaurant">
+            <h1><b>Horário</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Podem fechar sem aviso prévio.</p>
+                    <p>Segunda 16:00 - 17.00</p>
+                    <p>Terça 16:00 - 17:00</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>Quarta 16:00 - 17:00</p>
+                    <p>Quinta 10:00 - 17:00</p>
+                    <p>Sexta 16:00 - 17:00</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="farm4.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+            <p>Vemo-nos no campo :) Se quer saber mais, ou apoiar de alguma forma esta causa, ligue 05050515-122330</p>
+            <p><span class="w3-tag">PS</span> Queremos ajudar os pequenos agricultores e produtores,
+                através de um comunicação eficaz e do uso de tecnologia que lhes permita chegar aos consumidores de uma forma mais eficiente.</p>
+            <p class="w3-xxlarge"><strong>Registe a sua exploração</strong> introduzindo alguns detalhes, que nós tratamos do resto:
+            </p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                        required name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                        placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+            </form>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+
+        <!-- <p class="w3-center w3-jumbo" style="margin-bottom:10px"><img src="logo.png"></p> -->
+        <div class="container"><img src="logo1.png"></div>
+       
+    <p style="padding:1px">Ajude a melhorar a nossa tecnologia. Faça a sua doação e apoie esta causa!</p>
+    <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Apoiar agora</a>
+     
+    <!-- Footer end. -->
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
