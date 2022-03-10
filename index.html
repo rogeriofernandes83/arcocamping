@@ -6,6 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+  
+
+
+
+
+
         <style>
             body,
             html {
@@ -70,14 +85,14 @@ img {
 
 
     .apps {
-        max-width: 30%;
+        width: 200px;
         height: auto;
 
     }
 
 
      .logo {
-        max-width: 80%;
+        width: 400px;
         height: auto;
 
     }
@@ -121,6 +136,37 @@ img {
 
 
 
+
+@media only screen and (max-width: 600px) {
+    #home {
+        display: none;
+    }
+
+
+   .logo{
+        width: 200px;
+    }
+
+   .apps {
+        width: 100px;
+        height: auto;
+
+    }
+
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
  
 
         </style>
@@ -131,7 +177,6 @@ img {
     <div class="w3-top w3-hide-small">
         <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
             <a href="#" class="w3-bar-item w3-button">HOME</a>
-            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
             <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
             <a href="#booking" class="w3-bar-item w3-button">BOOKING</a>
             <a href="#myMap" class="w3-bar-item w3-button">REGISTO</a>
@@ -181,7 +226,7 @@ img {
 
     <!-- Menu Container -->
     <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-        <div class="w3-content">
+        <div class="w3-content" style="display: none;">
 
             
             
@@ -295,7 +340,7 @@ img {
 
             <div class="w3-row">
                 <div class="w3-col s6">
-                    <p>Podem fechar sem aviso prévio.</p>
+                    <p>Podem fechar sem aviso prévio ou ter horários mais alargados (não dispensa a consulta individual)</p>
                     <p>Segunda 16:00 - 17.00</p>
                     <p>Terça 16:00 - 17:00</p>
                 </div>
@@ -338,8 +383,8 @@ img {
         <div class="w3-content">
             <h1 id="myMap" class="w3-center w3-jumbo" style="margin-bottom:64px">Registo de produtor</h1>
             <p>Queremos ajudar os pequenos agricultores e produtores através de um comunicação eficaz, bem como do uso de tecnologia que lhes permita chegar aos consumidores de uma forma mais eficiente.</p>
-            <p><span class="w3-tag">P.S.</span>Se queres saber mais acerca deste projecto, ou apoiar de alguma forma esta causa, liga 967623351! </p>
-            <p class="w3-xxlarge">Regista já a tua exploração e começa a receber os teus clientes no campo:
+            <p><span class="w3-tag">P.S.</span>Se queres saber mais acerca deste projecto, ou apoiar de alguma forma esta causa, entra já em contacto connosco! </p>
+            <p class="w3-xxlarge">Regista já a tua exploração, aumenta o alcance do teu negócio, e começa a receber os teus clientes no campo:
             </p>
 
 
@@ -427,6 +472,33 @@ img {
             document.getElementById("apoiar").style.textDecoration = 'Underline';
         }
 
+    </script>
+
+
+
+
+      <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104674228846807");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_PT/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
 
 
