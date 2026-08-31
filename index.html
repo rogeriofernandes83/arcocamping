@@ -556,10 +556,14 @@ Electricity (to charge the phone), water and wifi included.
     <p id="contribui" style="padding:1px">Feel free to reach out to us at any time, or just drop by to see if it suits your needs! :)</p>
 
 
-        <script src="https://campspace.com/widget/book-on-campspace.js"></script> 
-<script id="campspace-widget">
-    document.addEventListener("DOMContentLoaded", function() { 
-    window.campspaceWidget("XMQW7TRJ961R0BDX3WBTSKCW550EXJ9H"); });
+<!-- Container onde o widget será renderizado (se necessário pelo Campspace) -->
+<div id="campspace-widget-container"></div>
+
+<!-- Carrega o script e só executa a função APÓS o término do carregamento -->
+<script 
+  src="https://campspace.com/widget/book-on-campspace.js" 
+  onload="if (typeof window.campspaceWidget === 'function') { window.campspaceWidget('XMQW7TRJ961R0BDX3WBTSKCW550EXJ9H'); }"
+  async>
 </script>
         
         
